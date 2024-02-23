@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Huddle-landing-page</title>
   </head>
   <body>
     <!-- nav section -->
     <nav class="container">
-      <img src="/assets/logo.svg" alt="huddle-logo" />
+      <img
+        src="/assets/logo.svg"
+        class="animate__animated animate__bounce"
+        alt="huddle-logo"
+      />
     </nav>
 
     <!-- main section -->
@@ -21,7 +29,9 @@
 
       <!-- text div -->
       <div class="main-inner-text">
-        <h2>Build The Community Your Fans Will Love</h2>
+        <h2 class="first-part-header">
+          Build The Community Your Fans Will Love
+        </h2>
         <p>
           Huddle re-imagines the way we build communities. You have a voice, but
           so does your audience. Create connections with your users as you
@@ -31,19 +41,23 @@
       </div>
     </main>
 
-    <!-- footer section -->
-    <!-- <footer class="container">
-      <div>
-        <ion-icon name="logo-facebook"></ion-icon>
-        <ion-icon name="logo-twitter"></ion-icon>
-        <ion-icon name="logo-instagram"></ion-icon>
+    <!--footer section -->
+    <footer class="container main-footer">
+      <div class="icon-box">
+        <ion-icon name="logo-facebook" class="icon"></ion-icon>
+        <ion-icon name="logo-twitter" class="icon"></ion-icon>
+        <ion-icon name="logo-instagram" class="icon"></ion-icon>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- icons -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </body>
 </html>
