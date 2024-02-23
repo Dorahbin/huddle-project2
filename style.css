@@ -13,7 +13,7 @@ body {
   background-repeat: no-repeat;
   background-color: hsl(257, 40%, 49%); */
   background: url('assets/bg-mobile.svg') no-repeat hsl(257, 40%, 49%);
-  background-size: cover;
+  background-size: contain;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
@@ -112,10 +112,18 @@ nav {
 
 /* descktop screen */
 @media (min-width: 1024px) {
+  body {
+    background: url('assets/bg-mobile.svg') no-repeat hsl(257, 40%, 49%);
+    background-size: contain;
+    background-position-x: 2%;
+  }
+
+  /* nav */
   nav img {
     width: 30%;
   }
 
+  /* main */
   .main {
     flex-direction: row;
     justify-content: center;
@@ -142,6 +150,8 @@ nav {
     width: 25rem;
   }
 
+  /* footer */
+
   .icon-box {
     justify-content: end;
   }
@@ -156,19 +166,3 @@ nav {
     padding-bottom: 5%;
   }
 }
-
-/* .btn:hover{
-  box-shadow: 0 20px 30px rgba(0,0,0,.8);
-  transform: translateY(-3px);
-}
-
-.btn:active{
-  box-shadow: 0 10px 20px rgba(0,0,0,.4);
-  transform: translateY(-1px);
-}
-
-.btn-white{
-  color: #000;
-  background-color: #fff;
-  border-radius: 3rem;
-} */
